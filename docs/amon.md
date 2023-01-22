@@ -75,6 +75,17 @@ SQL monitoring, then you should specify the option "n" here.
 option only works for baseline system statistics report.  
 * `--output-file` <Filename>: Report file name. Currently this option is not implemented for all 
 available reports.  
+* `--color` {dark | light | custom}: Use AMON *dark*, *light* or custom colors. The custom color 
+must be specified as `fg:N;bg:N;warn:N`. Available terminal custom colors (name:N):
+  * black  : 0
+  * red    : 1
+  * green  : 2
+  * yellow : 3
+  * blue   : 4
+  * magenta: 5
+  * cyan   : 6
+  * white  : 7
+
 
 Available ASM report types are:  
 `D[r]`: Client disk I/O statistics (V$ASM_DISK_IOSTAT).  
