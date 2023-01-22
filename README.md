@@ -1,4 +1,5 @@
 # Free Oracle Performance Tool AMON
+
 This is a main page of *AMON*, the free interactive tool for performance monitoring of Oracle databases.
 
 The tool is written completely in C using Oracle OCI API and UNIX Curses library. 
@@ -24,7 +25,11 @@ of starting a GUI or a browser.
 Starting with *AMON* version 2 only the Linux executable files will be provided. At the moment 
 the version 2 supports Oracle Release 19c on:
 * Oracle Linux 7.
-* Ubuntu 22.04 LTS using Oracle Instant Client x86-64.
+* Ubuntu 22.04 LTS using Oracle Instant Client for Linux x86-64.
+
+Further *AMON* documentation:
+* [Using AMON] (https://github.com/asimondev/amon/blob/master/docs/amon.md)
+
 
 ***
 
