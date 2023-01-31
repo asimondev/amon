@@ -1,4 +1,4 @@
-# Using AMON
+# AMON Reference
 
 ## DESCRIPTION
 
@@ -88,65 +88,65 @@ must be specified as `fg:N;bg:N;warn:N`. Available terminal custom colors (name:
 
 
 Available ASM report types are:  
-`D[r]`: Client disk I/O statistics (V$ASM_DISK_IOSTAT).  
-`L[r]`: Active long running operations (V$ASM_OPERATION).  
-`d[r]`: Disk I/O statistics (V$ASM_DISK).  
+- `D[r]`: Client disk I/O statistics (V$ASM_DISK_IOSTAT).  
+- `L[r]`: Active long running operations (V$ASM_OPERATION).  
+- `d[r]`: Disk I/O statistics (V$ASM_DISK).  
 
 Available RDBMS report types are:  
-`B[r]`:    Automatic big table caching details.  
-`D`:       Disk I/O statistics for database files.  
-`E[r]`:    System wait events.  
-`EEE[r]`:  CDB System wait events.  
-`I`:       I/O statistics.  
-`II`:      Disk I/O statistics for database functions.  
-`L[r]`:    Running long operations.  
-`P[r]`:    Session memory details.  
-`R[r]`:    Recovery details (V$RECOVERY_PROGRESS).  
-`RR[r]`:   Recovery processes (V$RECOVERY_SLAVE).  
-`TT[r]`:   Active transactions (V$TRANSACTIONS).  
-`U[r]`:    Redo dest. histograms (V$REDO_DEST_RESP_HISTOGRAM).  
-`UU`:      Redo apply histograms (V$STANDBY_EVENT_HISTOGRAM).  
-`a[m][r]`: Sampled session activity (V$ACTIVE_SESSION_HISTORY).  
-`as[r]`:   Session details from ASH (V$ACTIVE_SESSION_HISTORY).  
-`aa[r]`:   Archived log details (V$ARCHIVED_LOG).  
-`d`:       Datafiles I/O statistics.  
-`dd`:      Tempfiles I/O statistics.  
-`dnfs[r]`: Direct NFS statistics (V$DNFS_STATS).  
-`e`:       Grouped session wait events (V$SESSION_WAIT).  
-`ee[r]`:   Session wait events (V$SESSION_WAIT).  
-`g`:       General database information and redo logs switches.  
-`gg[r]`:   General CDB details (V$PDBS).  
-`gz`:      Database parameters (V$SYSTEM_PARAMETER).  
-`l[r]`:    Blocked session details (V$SESSION_BLOCKER).  
-`m`:       Memory allocation (SGA + PGA).  
-`mm[r]`:   In-Memory column store details (V$IM_SEGMENTS).  
-`p[r]`:    Parallel execution processes.  
-`pp[r]`:   AUTO parallel degree policy execution.  
-`rai[r]`:  RMAN performance details (V$BACKUP_ASYNC_IO).  
-`rsi[r]`:  RMAN performance details (V$BACKUP_SYNC_IO).  
-`s[r]`:    Session statistics (program, service, etc).  
-`ss[r]`:   Session statistics (wait events, etc.).  
-`sq[r]`:   Session and SQL statistics. -S or -P options are allowed.  
-`sa`:      ASH samples for the specified session (-S or -P options).  
-`se`:      Session events for the specified session (-S or -P options).  
-`st`:      Session time statistics for the specified session (-S or -P options).  
-`sz`:      One-time statistic snapshot for a specific session.  
-`t[r]`:    System time model statistics.  
-`tt[r]`:   Session time model statistics.  
-`ttt[r]`:  CDB system time model statistics.  
-`uuu[r]`:  Standby details from V$MANAGED_STANDBY.  
-`uuu2[r]`: Standby details from V$DATAGUARD_STATS.  
-`uuu3[r]`: Data Guard messages from V$DATAGUARD_STATUS.  
-`uuu4[r]`: Archive gaps from V$ARCHIVE_GAP.  
-`ww`:      Wait chains (V$WAIT_CHAINS).  
+- `B[r]`:    Automatic big table caching details.  
+- `D`:       Disk I/O statistics for database files.  
+- `E[r]`:    System wait events.  
+- `EEE[r]`:  CDB System wait events.  
+- `I`:       I/O statistics.  
+- `II`:      Disk I/O statistics for database functions.  
+- `L[r]`:    Running long operations.  
+- `P[r]`:    Session memory details.  
+- `R[r]`:    Recovery details (V$RECOVERY_PROGRESS).  
+- `RR[r]`:   Recovery processes (V$RECOVERY_SLAVE).  
+- `TT[r]`:   Active transactions (V$TRANSACTIONS).  
+- `U[r]`:    Redo dest. histograms (V$REDO_DEST_RESP_HISTOGRAM).  
+- `UU`:      Redo apply histograms (V$STANDBY_EVENT_HISTOGRAM).  
+- `a[m][r]`: Sampled session activity (V$ACTIVE_SESSION_HISTORY).  
+- `as[r]`:   Session details from ASH (V$ACTIVE_SESSION_HISTORY).  
+- `aa[r]`:   Archived log details (V$ARCHIVED_LOG).  
+- `d`:       Datafiles I/O statistics.  
+- `dd`:      Tempfiles I/O statistics.  
+- `dnfs[r]`: Direct NFS statistics (V$DNFS_STATS).  
+- `e`:       Grouped session wait events (V$SESSION_WAIT).  
+- `ee[r]`:   Session wait events (V$SESSION_WAIT).  
+- `g`:       General database information and redo logs switches.  
+- `gg[r]`:   General CDB details (V$PDBS).  
+- `gz`:      Database parameters (V$SYSTEM_PARAMETER).  
+- `l[r]`:    Blocked session details (V$SESSION_BLOCKER).  
+- `m`:       Memory allocation (SGA + PGA).  
+- `mm[r]`:   In-Memory column store details (V$IM_SEGMENTS).  
+- `p[r]`:    Parallel execution processes.  
+- `pp[r]`:   AUTO parallel degree policy execution.  
+- `rai[r]`:  RMAN performance details (V$BACKUP_ASYNC_IO).  
+- `rsi[r]`:  RMAN performance details (V$BACKUP_SYNC_IO).  
+- `s[r]`:    Session statistics (program, service, etc).  
+- `ss[r]`:   Session statistics (wait events, etc.).  
+- `sq[r]`:   Session and SQL statistics. -S or -P options are allowed.  
+- `sa`:      ASH samples for the specified session (-S or -P options).  
+- `se`:      Session events for the specified session (-S or -P options).  
+- `st`:      Session time statistics for the specified session (-S or -P options).  
+- `sz`:      One-time statistic snapshot for a specific session.  
+- `t[r]`:    System time model statistics.  
+- `tt[r]`:   Session time model statistics.  
+- `ttt[r]`:  CDB system time model statistics.  
+- `uuu[r]`:  Standby details from V$MANAGED_STANDBY.  
+- `uuu2[r]`: Standby details from V$DATAGUARD_STATS.  
+- `uuu3[r]`: Data Guard messages from V$DATAGUARD_STATUS.  
+- `uuu4[r]`: Archive gaps from V$ARCHIVE_GAP.  
+- `ww`:      Wait chains (V$WAIT_CHAINS).  
 
 Additionally some report types can contain the letter `i` (idle flag) like
 `si` or `eeir` to hide the output of the "idle details". You can use
 this flag in the following reports:  
-`s`, `tt` - to hide the sessions with the not active status.  
-`e`, `ee`, `ss` - to suppress the sessions in the idle wait class event.  
-`D`, `II`, `d`, `dd` - to ignore objects without I/O operations.  
-`sq` - to filter out sessions with SQL_ID is NULL.  
+- `s`, `tt` - to hide the sessions with the not active status.  
+- `e`, `ee`, `ss` - to suppress the sessions in the idle wait class event.  
+- `D`, `II`, `d`, `dd` - to ignore objects without I/O operations.  
+- `sq` - to filter out sessions with SQL_ID is NULL.  
 
 You can use a "-c" option, Ctrl-C (SIGINT signal) or "kill" command
 (SIGTERM signal) to close a database connection properly in reporting mode.  
@@ -181,26 +181,26 @@ You can specify the keyword "baseline" as the statistic name. This
 means, that the following recommended load-related statistics according to
 the "Oracle Database Performance Tuning Guide" book will be collected:  
 
-*redo size*  
-*session logical reads*  
-*db block changes*  
-*physical reads*  
-*physical read total bytes*  
-*physical writes*  
-*physical write total bytes*  
-*parse count (total)*  
-*parse count (hard)*  
-*user calls*  
-*execute count*  
-*DB time*  
-*CPU used by this session*  
-*parse time elapsed*  
-*bytes sent via SQL\*Net to client*  
-*bytes received via SQL\*Net from client*  
-*SQL\*Net roundtrips to/from client*  
-*bytes sent via SQL\*Net to dblink*  
-*bytes received via SQL\*Net from dblink*  
-*SQL\*Net roundtrips to/from dblink*  
+- *redo size*  
+- *session logical reads*  
+- *db block changes*  
+- *physical reads*  
+- *physical read total bytes*  
+- *physical writes*  
+- *physical write total bytes*  
+- *parse count (total)*  
+- *parse count (hard)*  
+- *user calls*  
+- *execute count*  
+- *DB time*  
+- *CPU used by this session*  
+- *parse time elapsed*  
+- *bytes sent via SQL\*Net to client*  
+- *bytes received via SQL\*Net from client*  
+- *SQL\*Net roundtrips to/from client*  
+- *bytes sent via SQL\*Net to dblink*  
+- *bytes received via SQL\*Net from dblink*  
+- *SQL\*Net roundtrips to/from dblink*  
 
 
 Sometimes you don't know exactly a statistic name. In this case you can
@@ -214,70 +214,70 @@ option you can specify any other users with the DBA role.
 * `-v`: Print AMON version number and exit.
 
 * `-w` <AMON start window>: You can specify the start window using the same letters as in the AMON help window (interactive mode only). The default start window is "g" (general information window). The available windows for a database instance are:  
-`B`   - Automatic big table caching objects (V$BT_SCAN_OBJ_TEMPS).  
-`BB`  - Buffer cache details (V$BH).  
-`D`   - Database files I/O statistics (V$IOSTAT_FILE).  
-`E`   - System wait events statistics (V$SYSTEM_EVENT).  
-`EE`  - System wait event classes statistics (V$SYSTEM_WAIT_CLASS).  
-`EEE` - CDB System wait event statistics (V$CON_SYSTEM_EVENT).  
-`I`   - Instance I/O statistics (V$SYSSTAT).  
-`II`  - Instance I/O functions (V$IOSTAT_FUNCTION).  
-`L`   - Currently running long operations (V$SESSION_LONGOPS).  
-`LL`  - Library cache details (V$DB_OBJECT_CACHE).  
-`M`   - Mutex statistics (V$MUTEX_SLEEP).  
-`MM`  - Mutex statistics (V$MUTEX_SLEEP_HISTORY).  
-`P`   - Process memory details (V$PROCESS).  
-`R`  - RMAN jobs status (V$RMAN_STATUS).  
-`RR` - RMAN jobs output (V$RMAN_OUTPUT).  
-`S`   - SGA statistics (V$LIBRARY_CACHE).  
-`T`   - Temporary segment usage (V$TEMPSEG_USAGE).  
-`TT`  - Active transactions (V$TRANSACTION).  
-`U`   - Redo dest. histograms (V$REDO_DEST_RESP_HISTOGRAM).  
-`UU`  - Redo apply histograms (V$STANDBY_EVENT_HISTOGRAM).  
-`a`   - ASH details (V$ACTIVE_SESSION_HISTORY).  
-`aa`  - Archived redo logs (V$ARCHIVED_LOG).  
-`d`   - Datafiles statistics (V$FILESTAT).  
-`dd`  - Tempfiles statistics (V$TEMPSTAT).  
-`e`   - Grouped wait events (V$SESSION_WAIT).  
-`ee`  - Sessions by wait events (V$SESSION_WAIT).  
-`g`   - General database information (V$DATABASE, DBA_REGISTRY).  
-`gg`  - General CDB details (V$PDBS).  
-`h`   - AMON keys (alphabetically).  
-`hh`  - AMON keys by usage.  
-`l`   - Blocked sessions (V$SESSION_BLOCKERS).  
-`ll`  - Locking details (V$LOCK).  
-`lll` - Latch statistics (V$LATCH).  
-`m`   - Instance memory overview.  
-`mm`  - In-memory column store statistics (V$IM_SEGMENTS).  
-`n`   - Network statistics (V$SYSSTAT).  
-`p`   - Parallel execution details (V$PX_SESSION).  
-`pp`  - Auto parallel degree policy details (V$RSRC_CONSUMER_GROUP).  
-`r`   - RAC statistics (V$SYSSTAT, V$INSTANCE_CACHE_TRANSFER).  
-`rr`   - Recovery details (V$RECOVERY_PROGRESS).  
-`rrr`  - Recovery processes (V$RECOVERY_SLAVE).  
-`s`   - Session statistics I (V$SESSION).  
-`ss`  - Session statistics II (V$SESSION).  
-`t`   - System time model statistics (V$SYS_TIME_MODEL).  
-`tt`  - Session time model statistics  (V$SESS_TIME_MODEL.  
-`ttt` - CDB System time model statistics (V$CON_SYS_TIME_MODEL).  
-`u`   - Data Guard overview (V$DATABASE).  
-`uu`  - Archiving destinations (V$ARCHIVE_DEST).  
-`uuu` - Data Guard details (V$MANAGED_STANDBY).  
-`x`   - Exadata statistics (V$SYSSTAT).  
+- `B`   - Automatic big table caching objects (V$BT_SCAN_OBJ_TEMPS).  
+- `BB`  - Buffer cache details (V$BH).  
+- `D`   - Database files I/O statistics (V$IOSTAT_FILE).  
+- `E`   - System wait events statistics (V$SYSTEM_EVENT).  
+- `EE`  - System wait event classes statistics (V$SYSTEM_WAIT_CLASS).  
+- `EEE` - CDB System wait event statistics (V$CON_SYSTEM_EVENT).  
+- `I`   - Instance I/O statistics (V$SYSSTAT).  
+- `II`  - Instance I/O functions (V$IOSTAT_FUNCTION).  
+- `L`   - Currently running long operations (V$SESSION_LONGOPS).  
+- `LL`  - Library cache details (V$DB_OBJECT_CACHE).  
+- `M`   - Mutex statistics (V$MUTEX_SLEEP).  
+- `MM`  - Mutex statistics (V$MUTEX_SLEEP_HISTORY).  
+- `P`   - Process memory details (V$PROCESS).  
+- `R`  - RMAN jobs status (V$RMAN_STATUS).  
+- `RR` - RMAN jobs output (V$RMAN_OUTPUT).  
+- `S`   - SGA statistics (V$LIBRARY_CACHE).  
+- `T`   - Temporary segment usage (V$TEMPSEG_USAGE).  
+- `TT`  - Active transactions (V$TRANSACTION).  
+- `U`   - Redo dest. histograms (V$REDO_DEST_RESP_HISTOGRAM).  
+- `UU`  - Redo apply histograms (V$STANDBY_EVENT_HISTOGRAM).  
+- `a`   - ASH details (V$ACTIVE_SESSION_HISTORY).  
+- `aa`  - Archived redo logs (V$ARCHIVED_LOG).  
+- `d`   - Datafiles statistics (V$FILESTAT).  
+- `dd`  - Tempfiles statistics (V$TEMPSTAT).  
+- `e`   - Grouped wait events (V$SESSION_WAIT).  
+- `ee`  - Sessions by wait events (V$SESSION_WAIT).  
+- `g`   - General database information (V$DATABASE, DBA_REGISTRY).  
+- `gg`  - General CDB details (V$PDBS).  
+- `h`   - AMON keys (alphabetically).  
+- `hh`  - AMON keys by usage.  
+- `l`   - Blocked sessions (V$SESSION_BLOCKERS).  
+- `ll`  - Locking details (V$LOCK).  
+- `lll` - Latch statistics (V$LATCH).  
+- `m`   - Instance memory overview.  
+- `mm`  - In-memory column store statistics (V$IM_SEGMENTS).  
+- `n`   - Network statistics (V$SYSSTAT).  
+- `p`   - Parallel execution details (V$PX_SESSION).  
+- `pp`  - Auto parallel degree policy details (V$RSRC_CONSUMER_GROUP).  
+- `r`   - RAC statistics (V$SYSSTAT, V$INSTANCE_CACHE_TRANSFER).  
+- `rr`   - Recovery details (V$RECOVERY_PROGRESS).  
+- `rrr`  - Recovery processes (V$RECOVERY_SLAVE).  
+- `s`   - Session statistics I (V$SESSION).  
+- `ss`  - Session statistics II (V$SESSION).  
+- `t`   - System time model statistics (V$SYS_TIME_MODEL).  
+- `tt`  - Session time model statistics  (V$SESS_TIME_MODEL.  
+- `ttt` - CDB System time model statistics (V$CON_SYS_TIME_MODEL).  
+- `u`   - Data Guard overview (V$DATABASE).  
+- `uu`  - Archiving destinations (V$ARCHIVE_DEST).  
+- `uuu` - Data Guard details (V$MANAGED_STANDBY).  
+- `x`   - Exadata statistics (V$SYSSTAT).  
 
 The available windows for a ASM instance are:  
-`D`  - ASM clients I/O statistics (V$ASM_DISK_IOSTAT).  
-`E`  - System wait events statistics (V$SYSTEM_EVENT).  
-`EE` - System wait event classes statistics (V$SYSTEM_WAIT_CLASS).  
-`L`  - Running long operations (V$ASM_OPERATION).  
-`a`  - ASH details (V$ACTIVE_SESSION_HISTORY).  
-`d`  - ASM disks statistics (V$ASM_DISK_STAT).  
-`e`  - Grouped wait events (V$SESSION_WAIT).  
-`ee` - Sessions by wait events (V$SESSION_WAIT).  
-`g`  - General ASM information.  
-`h`  - AMON keys (alphabetically).  
-`hh` - AMON keys by usage.  
-`m`  - Instance memory overview.  
+- `D`  - ASM clients I/O statistics (V$ASM_DISK_IOSTAT).  
+- `E`  - System wait events statistics (V$SYSTEM_EVENT).  
+- `EE` - System wait event classes statistics (V$SYSTEM_WAIT_CLASS).  
+- `L`  - Running long operations (V$ASM_OPERATION).  
+- `a`  - ASH details (V$ACTIVE_SESSION_HISTORY).  
+- `d`  - ASM disks statistics (V$ASM_DISK_STAT).  
+- `e`  - Grouped wait events (V$SESSION_WAIT).  
+- `ee` - Sessions by wait events (V$SESSION_WAIT).  
+- `g`  - General ASM information.  
+- `h`  - AMON keys (alphabetically).  
+- `hh` - AMON keys by usage.  
+- `m`  - Instance memory overview.  
 
 * `--pdb` <PDB_Name>: If you specify the PDB name, the AMON will set this container at the beginning using the following statement:  
   `ALTER SESSION SET CONTAINER=PDB_Name`  
@@ -313,10 +313,10 @@ Help mode:
 
 ## AUTHOR
 
-Andrej Simon <andrej.simon@oracle.com>
+Andrej Simon (*andrej.simon@oracle.com*).
 
 ## SEE ALSO
 
-amon-intro(7) amon-filter(7) amon-grafana(7)
-
-[Free performance monitoring tool AMON](http://sites.google.com/site/freetoolamon)
+* [Introduction to AMON](https://github.com/asimondev/amon/blob/master/docs/amon_intro.md)
+* [AMON Filter Option](https://github.com/asimondev/amon/blob/master/docs/amon_filter.md)
+* [AMON on Ubuntu](https://github.com/asimondev/amon/blob/master/docs/amon_ubuntu.md)

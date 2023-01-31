@@ -28,7 +28,10 @@ the version 2 supports Oracle Release 19c on:
 * Ubuntu 22.04 LTS using Oracle Instant Client for Linux x86-64.
 
 Further *AMON* documentation:
-* [Using AMON](https://github.com/asimondev/amon/blob/master/docs/amon.md)
+* [AMON Reference](https://github.com/asimondev/amon/blob/master/docs/amon.md)
+* [AMON on Ubuntu](https://github.com/asimondev/amon/blob/master/docs/amon_ubuntu.md)
+* [Introduction to AMON](https://github.com/asimondev/amon/blob/master/docs/amon_intro.md)
+* [AMON Filter Option](https://github.com/asimondev/amon/blob/master/docs/amon_filter.md)
 
 
 ***
