@@ -46,9 +46,23 @@ the second and other filters.
 
 ## EXAMPLES   
 
+### USER Filter
 `amon -f "USER:SYS"`  
 
-AMON will start in interactive mode and will limit the sessions in the corresponding windows to the SYS user sessions only.
+AMON will start in interactive mode and will limit the sessions in the corresponding windows to the SYS user 
+sessions only. Usually would like to see the SYS user sessions, so you could start AMON with this filter and
+go to the session view (*s*) immediately:
+
+`amon -f "user:SYS" -w s`
+
+### PROGRAM Filter
+
+Sometimes you would like check the sessions started with specific program. For instance, you can use this 
+command to check for the SQL*Plus session:
+
+`amon -f "program:sqlplus%" -w s`
+
+### Advanced Filters
 
 `amon -o s -f "-service:%BACKGROUND%" -f "program:sqlplus%" -f "+-program:amon%"`  
 

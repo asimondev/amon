@@ -27,11 +27,26 @@ the version 2 supports Oracle Release 19c on:
 * Oracle Linux 7.
 * Ubuntu 22.04 LTS using Oracle Instant Client for Linux x86-64.
 
+## How to start AMON.
+
+You should download the latest AMON release and copy the corresponding file to your Linux server. 
+After setting Oracle environment you can start AMON: ./amon_19c_ol7. You would see the first 
+AMON view with general database details.
+
+![First AMON view.](/home/andrej/Pictures/Screenshots/amon_general.png)
+
+The first row contains hostname, instance name, current user and the refresh interval. The 
+second row shows view dependent keys. You can always quit AMON by pressing **"q"** key. 
+
+You can always press **"h"** or **"hh"** keys to see the available AMON views. 
+
+**Do not press any cursor movement keys or page down and page up keys! They don't work in AMON.**
+
 Further *AMON* documentation:
-* [AMON Reference](https://github.com/asimondev/amon/blob/master/docs/amon.md)
-* [AMON on Ubuntu](https://github.com/asimondev/amon/blob/master/docs/amon_ubuntu.md)
 * [Introduction to AMON](https://github.com/asimondev/amon/blob/master/docs/amon_intro.md)
+* [AMON Reference](https://github.com/asimondev/amon/blob/master/docs/amon.md)
 * [AMON Filter Option](https://github.com/asimondev/amon/blob/master/docs/amon_filter.md)
+* [AMON on Ubuntu](https://github.com/asimondev/amon/blob/master/docs/amon_ubuntu.md)
 
 
 ***
