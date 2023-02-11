@@ -33,7 +33,7 @@ You should download the latest AMON release and copy the corresponding file to y
 After setting Oracle environment you can start AMON: ./amon_19c_ol7. You would see the first 
 AMON view with general database details.
 
-![First AMON view.](/home/andrej/Pictures/Screenshots/amon_general.png)
+![First AMON view.](https://github.com/asimondev/amon/blob/master/screenshots/amon_general.png)
 
 The first row contains hostname, instance name, current user and the refresh interval. The 
 second row shows view dependent keys. You can always quit AMON by pressing **"q"** key. 
